@@ -1,5 +1,6 @@
 const express  = require('express');
 const mongoose = require('mongoose');
+//const { MongoClient } = require('mongodb');
 const morgan = require('morgan');
 const bodyParser  = require('body-parser');
 const cors = require('cors');
@@ -14,7 +15,7 @@ const corsOptions = {
   };
 
 
-mongoose.connect('mongodb://localhost:27017/testdb', {useNewUrlParser: true, useUnifiedTopology: true})
+mongoose.connect('mongodb+srv://admin:ODEOf6lqSe24U4o4@cluster0.awhrqom.mongodb.net/?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true})
 
 const db = mongoose.connection
 
